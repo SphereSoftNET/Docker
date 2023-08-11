@@ -14,6 +14,7 @@ from the Microsoft Dockerfile of mcr.microsoft.com/dotnet/framework/sdk:4.8 for 
 We have [added](Dockerfile.net.framework.sdk.4.8.T4.2019#L40) the MS Build 17.0 Component "Microsoft.VisualStudio.Component.TextTemplating" (T4), see also
 [Visual Studio Build Tools component directory](https://learn.microsoft.com/en-us/visualstudio/install/workload-component-id-vs-build-tools?view=vs-2022).
 
+[![docker.com/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.com/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.2019/images/sha256-7cc07347007f911207a5870a442edce1389610138e07eaa88f012166886b8e4b)
 
 
 <!-- FOOTER -->
