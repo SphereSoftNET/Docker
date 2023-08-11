@@ -1,10 +1,10 @@
 # Docker image files
 
-[[_TOC_]]
+- [Microsoft .NET Framework SDK 4.8 with Text Templating (T4) on Windows Server Core 2019](#microsoft-net-framework-sdk-48-with-text-templating-t4-on-windows-server-core-2019)
 
 
 
-## Microsoft .NET Framework SDK 4.8 with Text Templating (T4) on Windows Server Core 2019
+## [Microsoft .NET Framework SDK 4.8 with Text Templating (T4) on Windows Server Core 2019](#)
 
 The image file [Dockerfile.net.framework.sdk.4.8.T4.2019](Dockerfile.net.framework.sdk.4.8.T4.2019)
 based on the original [build instructions](https://github.com/microsoft/dotnet-framework-docker/blob/main/src/sdk/4.8/windowsservercore-ltsc2019/Dockerfile)
@@ -19,3 +19,4 @@ We have added the MS Build 17.0 Component "Microsoft.VisualStudio.Component.Text
 <!-- FOOTER -->
 <hr style="height: 1px" />
 <a href="http://spheresoft.net" style="font-size: 0.7em; float: right">spheresoft.net</a>
+
