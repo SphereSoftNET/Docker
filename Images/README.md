@@ -10,7 +10,7 @@
 The image file [Dockerfile.net.framework.sdk.4.8.T4.GIT.2019](Dockerfile.net.framework.sdk.4.8.T4.GIT.2019)
 is an extension to [Dockerfile.net.framework.sdk.4.8.T4.2019](Dockerfile.net.framework.sdk.4.8.T4.2019) ([docker.io/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.2019/images/sha256-7cc07347007f911207a5870a442edce1389610138e07eaa88f012166886b8e4b)).
 
-We have [added](Dockerfile.net.framework.sdk.4.8.T4.GIT.2019#L8-L13) [GIT 2.41.0.3](https://github.com/git-for-windows/git/releases/download/v2.41.0.windows.3/Git-2.41.0.3-64-bit.exe) for Windows (64bit).
+We have [added](Dockerfile.net.framework.sdk.4.8.T4.GIT.2019#L8-L12) [GIT 2.41.0.3](https://github.com/git-for-windows/git/releases/download/v2.41.0.windows.3/Git-2.41.0.3-64-bit.exe) for Windows (64bit).
 
 | Component           | Version      |
 | ---                 | :-:          |
