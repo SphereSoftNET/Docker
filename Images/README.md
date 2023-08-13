@@ -16,6 +16,16 @@ We have [added](Dockerfile.net.framework.sdk.4.8.T4.2019#L40) the MS Build 17.0 
 [Visual Studio Build Tools component directory](https://learn.microsoft.com/en-us/visualstudio/install/workload-component-id-vs-build-tools?view=vs-2022)
 and [GIT 2.41.0.3](https://github.com/git-for-windows/git/releases/download/v2.41.0.windows.3/Git-2.41.0.3-64-bit.exe) for Windows.
 
+| Component           | Version      |
+| ---                 | :-:          |
+| Windows Server Core | 2019         |
+| .NET Framework SDK  | 4.8          |
+| MSBuild<br/>*.NET desktop build tools*<br/>*Web Development build*<br/>*Text Template Transformation*| 17.7.2.37605 |
+| NuGet               | 6.6.1        |
+| GIT                 | 2.41.0.3<br/>Windows 64-bit |
+
+[![docker.com/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.com/spheresoftnet/net.framework.sdk:4.8.T4.GIT.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.GIT.2019/images/sha256-18afc4614db58fbbae183a522f686c24730d09048ec379c798e2af14ecddc03d)
+
 
 
 ## [Microsoft .NET Framework SDK 4.8 with Text Templating (T4) on Windows Server Core 2019](#)
@@ -28,13 +38,17 @@ from the Microsoft Dockerfile of mcr.microsoft.com/dotnet/framework/sdk:4.8 for 
 We have [added](Dockerfile.net.framework.sdk.4.8.T4.2019#L40) the MS Build 17.0 Component "Microsoft.VisualStudio.Component.TextTemplating" (T4), see also
 [Visual Studio Build Tools component directory](https://learn.microsoft.com/en-us/visualstudio/install/workload-component-id-vs-build-tools?view=vs-2022).
 
-[![docker.com/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.com/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.2019/images/sha256-7cc07347007f911207a5870a442edce1389610138e07eaa88f012166886b8e4b)
+| Component           | Version      |
+| ---                 | :-:          |
+| Windows Server Core | 2019         |
+| .NET Framework SDK  | 4.8          |
+| MSBuild<br/>*.NET desktop build tools*<br/>*Web Development build*<br/>*Text Template Transformation*| 17.7.2.37605 |
+| NuGet               | 6.6.1        |
 
-<!-- [![docker.com/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.com/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.2019/images/sha256-7cc07347007f911207a5870a442edce1389610138e07eaa88f012166886b8e4b) -->
+[![docker.com/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.com/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.2019/images/sha256-7cc07347007f911207a5870a442edce1389610138e07eaa88f012166886b8e4b)
 
 
 
 <!-- FOOTER -->
 <hr style="height: 1px" />
 <a href="http://spheresoft.net" style="font-size: 0.7em; float: right">spheresoft.net</a>
-
