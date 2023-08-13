@@ -8,13 +8,9 @@
 ## [Microsoft .NET Framework SDK 4.8 with Text Templating (T4) on Windows Server Core 2019 and GIT](#)
 
 The image file [Dockerfile.net.framework.sdk.4.8.T4.GIT.2019](Dockerfile.net.framework.sdk.4.8.T4.GIT.2019)
-based on the original [build instructions](https://github.com/microsoft/dotnet-framework-docker/blob/main/src/sdk/4.8/windowsservercore-ltsc2019/Dockerfile)
-from the Microsoft Dockerfile of mcr.microsoft.com/dotnet/framework/sdk:4.8 for Windows Server Core
-2019.
+is an extension to [Dockerfile.net.framework.sdk.4.8.T4.2019](Dockerfile.net.framework.sdk.4.8.T4.2019) ([docker.io/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.2019/images/sha256-7cc07347007f911207a5870a442edce1389610138e07eaa88f012166886b8e4b)).
 
-We have [added](Dockerfile.net.framework.sdk.4.8.T4.GIT.2019#L40) the MS Build 17.0 Component "Microsoft.VisualStudio.Component.TextTemplating" (T4), see also
-[Visual Studio Build Tools component directory](https://learn.microsoft.com/en-us/visualstudio/install/workload-component-id-vs-build-tools?view=vs-2022)
-and [added](Dockerfile.net.framework.sdk.4.8.T4.GIT.2019#L62-L67) [GIT 2.41.0.3](https://github.com/git-for-windows/git/releases/download/v2.41.0.windows.3/Git-2.41.0.3-64-bit.exe) for Windows.
+We have [added](Dockerfile.net.framework.sdk.4.8.T4.GIT.2019#L8-L13) [GIT 2.41.0.3](https://github.com/git-for-windows/git/releases/download/v2.41.0.windows.3/Git-2.41.0.3-64-bit.exe) for Windows (64bit).
 
 | Component           | Version      |
 | ---                 | :-:          |
@@ -24,7 +20,7 @@ and [added](Dockerfile.net.framework.sdk.4.8.T4.GIT.2019#L62-L67) [GIT 2.41.0.3]
 | NuGet               | 6.6.1        |
 | GIT                 | 2.41.0.3<br/>Windows 64-bit |
 
-[![docker.com/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.com/spheresoftnet/net.framework.sdk:4.8.T4.GIT.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.GIT.2019/images/sha256-18afc4614db58fbbae183a522f686c24730d09048ec379c798e2af14ecddc03d)
+[![docker.com/spheresoftnet/net.framework.sdk:4.8.T4.GIT.2019](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.io/spheresoftnet/net.framework.sdk:4.8.T4.GIT.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.GIT.2019/images/sha256-18afc4614db58fbbae183a522f686c24730d09048ec379c798e2af14ecddc03d)
 
 
 
@@ -45,7 +41,7 @@ We have [added](Dockerfile.net.framework.sdk.4.8.T4.2019#L40) the MS Build 17.0 
 | MSBuild<br/>*.NET desktop build tools*<br/>*Web Development build*<br/>*Text Template Transformation*| 17.7.2.37605 |
 | NuGet               | 6.6.1        |
 
-[![docker.com/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.com/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.2019/images/sha256-7cc07347007f911207a5870a442edce1389610138e07eaa88f012166886b8e4b)
+[![docker.io/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.io/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.2019/images/sha256-7cc07347007f911207a5870a442edce1389610138e07eaa88f012166886b8e4b)
 
 
 
