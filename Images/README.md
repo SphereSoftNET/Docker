@@ -1,6 +1,20 @@
 # Docker image files
 
+- [Microsoft .NET Framework SDK 4.8 with Text Templating (T4) on Windows Server Core 2019 and GIT](##microsoft-net-framework-sdk-48-with-text-templating-t4-on-windows-server-core-2019-and-git)
 - [Microsoft .NET Framework SDK 4.8 with Text Templating (T4) on Windows Server Core 2019](#microsoft-net-framework-sdk-48-with-text-templating-t4-on-windows-server-core-2019)
+
+
+
+## [Microsoft .NET Framework SDK 4.8 with Text Templating (T4) on Windows Server Core 2019 and GIT](#)
+
+The image file [Dockerfile.net.framework.sdk.4.8.T4.GIT.2019](Dockerfile.net.framework.sdk.4.8.T4.GIT.2019)
+based on the original [build instructions](https://github.com/microsoft/dotnet-framework-docker/blob/main/src/sdk/4.8/windowsservercore-ltsc2019/Dockerfile)
+from the Microsoft Dockerfile of mcr.microsoft.com/dotnet/framework/sdk:4.8 for Windows Server Core
+2019.
+
+We have [added](Dockerfile.net.framework.sdk.4.8.T4.2019#L40) the MS Build 17.0 Component "Microsoft.VisualStudio.Component.TextTemplating" (T4), see also
+[Visual Studio Build Tools component directory](https://learn.microsoft.com/en-us/visualstudio/install/workload-component-id-vs-build-tools?view=vs-2022)
+and [GIT 2.41.0.3](https://github.com/git-for-windows/git/releases/download/v2.41.0.windows.3/Git-2.41.0.3-64-bit.exe) for Windows.
 
 
 
@@ -15,6 +29,9 @@ We have [added](Dockerfile.net.framework.sdk.4.8.T4.2019#L40) the MS Build 17.0 
 [Visual Studio Build Tools component directory](https://learn.microsoft.com/en-us/visualstudio/install/workload-component-id-vs-build-tools?view=vs-2022).
 
 [![docker.com/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.com/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.2019/images/sha256-7cc07347007f911207a5870a442edce1389610138e07eaa88f012166886b8e4b)
+
+<!-- [![docker.com/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.com/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.2019/images/sha256-7cc07347007f911207a5870a442edce1389610138e07eaa88f012166886b8e4b) -->
+
 
 
 <!-- FOOTER -->
