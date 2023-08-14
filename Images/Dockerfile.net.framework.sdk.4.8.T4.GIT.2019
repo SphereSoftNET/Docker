@@ -3,12 +3,21 @@
 ARG REPO=docker.io/spheresoftnet/net.framework.sdk
 FROM $REPO:4.8.T4.2019
 
+
+MAINTAINER Holger Boskugel, github.com/SphereSoftNET
+
+LABEL maintainer="Holger Boskugel, github.com/SphereSoftNET"
+LABEL decsription=".NET Framework 4.8 (2019-LTSC) extension Text Templating (T4) and GIT"
+
+
 SHELL ["cmd", "/S", "/C"]
+
 
 # Install GIT
 RUN curl -fSLo Git-64-bit.exe https://github.com/git-for-windows/git/releases/download/v2.41.0.windows.3/Git-2.41.0.3-64-bit.exe `
     && start /w Git-64-bit /SILENT /NORESTART `
     && powershell -Command "if ($err = dir $Env:TEMP -Filter dd_setup_*_errors.log | where Length -gt 0 | Get-Content) { throw $err }" `
     && del Git-64-bit.exe
+
 
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
