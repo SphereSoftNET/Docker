@@ -20,7 +20,8 @@ We have [added](Dockerfile.net.framework.sdk.4.8.T4.GIT.2019#L8-L12) [GIT 2.41.0
 | NuGet               | 6.6.1        |
 | GIT                 | 2.41.0.3<br/>Windows 64-bit |
 
-[![docker.com/spheresoftnet/net.framework.sdk:4.8.T4.GIT.2019](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.io/spheresoftnet/net.framework.sdk:4.8.T4.GIT.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.GIT.2019/images/sha256-1f1dc70d666020b22eac3868c680aa1e4921b071ca1a1f74464d8c61be141023)
+[![docker.com/spheresoftnet/net.framework.sdk:4.8.T4.GIT.2019](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.io/spheresoftnet/net.framework.sdk:4.8.T4.GIT.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.GIT.2019/images/sha256-1f1dc70d666020b22eac3868c680aa1e4921b071ca1a1f74464d8c61be141023)  
+[<img src="https://github.com/fluidicon.png" alt="ghcr.io/spheresoftnet/net.framework.sdk:4.8.T4.GIT.2019" height="32"/> ghcr.io/spheresoftnet/net.framework.sdk:4.8.T4.GIT.2019](https://github.com/SphereSoftNET/Docker/pkgs/container/net.framework.sdk/119116954?tag=4.8.T4.GIT.2019)
 
 
 
@@ -40,8 +41,8 @@ We have [added](Dockerfile.net.framework.sdk.4.8.T4.2019#L16-L20) the MS Build 1
 | MSBuild<br/>*.NET desktop build tools*<br/>*Web Development build*<br/>*Text Template Transformation*| 17.7.2.37605 |
 | NuGet               | 6.6.1        |
 
-[![docker.io/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.io/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.2019/images/sha256-1253b2b6895ac8a80c9cfb060cbfce5eb3c2226f666390bd7a44c16f552f1c10)
-
+[![docker.io/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.io/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.2019/images/sha256-1253b2b6895ac8a80c9cfb060cbfce5eb3c2226f666390bd7a44c16f552f1c10)  
+[<img src="https://github.com/fluidicon.png" alt="ghcr.io/spheresoftnet/net.framework.sdk:4.8.T4.GIT.2019" height="32"/> ghcr.io/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://github.com/SphereSoftNET/Docker/pkgs/container/net.framework.sdk/119117063?tag=4.8.T4.2019)
 
 
 <!-- FOOTER -->
