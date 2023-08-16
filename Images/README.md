@@ -8,7 +8,7 @@
 ## [Microsoft .NET Framework SDK 4.8 with Text Templating (T4) on Windows Server Core 2019 and GIT](#)
 
 The image file [Dockerfile.net.framework.sdk.4.8.T4.GIT.2019](Dockerfile.net.framework.sdk.4.8.T4.GIT.2019)
-is an extension to [Dockerfile.net.framework.sdk.4.8.T4.2019](Dockerfile.net.framework.sdk.4.8.T4.2019) ([docker.io/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.2019/images/sha256-1bed9f3e76e44f5b4d8fe110336bd99ba88a148b6142e71cd773f1d8d44c0ab4)).
+is an extension to [Dockerfile.net.framework.sdk.4.8.T4.2019](Dockerfile.net.framework.sdk.4.8.T4.2019) ([docker.io/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.2019/images/sha256-1253b2b6895ac8a80c9cfb060cbfce5eb3c2226f666390bd7a44c16f552f1c10)).
 
 We have [added](Dockerfile.net.framework.sdk.4.8.T4.GIT.2019#L8-L12) [GIT 2.41.0.3](https://github.com/git-for-windows/git/releases/download/v2.41.0.windows.3/Git-2.41.0.3-64-bit.exe) for Windows (64bit).
 
@@ -20,7 +20,7 @@ We have [added](Dockerfile.net.framework.sdk.4.8.T4.GIT.2019#L8-L12) [GIT 2.41.0
 | NuGet               | 6.6.1        |
 | GIT                 | 2.41.0.3<br/>Windows 64-bit |
 
-[![docker.com/spheresoftnet/net.framework.sdk:4.8.T4.GIT.2019](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.io/spheresoftnet/net.framework.sdk:4.8.T4.GIT.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.GIT.2019/images/sha256-f6d494c7a785066d49888b7f75ab5988aca7492a6cebd416660046a8c8c31345)
+[![docker.com/spheresoftnet/net.framework.sdk:4.8.T4.GIT.2019](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.io/spheresoftnet/net.framework.sdk:4.8.T4.GIT.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.GIT.2019/images/sha256-1f1dc70d666020b22eac3868c680aa1e4921b071ca1a1f74464d8c61be141023)
 
 
 
@@ -40,7 +40,7 @@ We have [added](Dockerfile.net.framework.sdk.4.8.T4.2019#L16-L20) the MS Build 1
 | MSBuild<br/>*.NET desktop build tools*<br/>*Web Development build*<br/>*Text Template Transformation*| 17.7.2.37605 |
 | NuGet               | 6.6.1        |
 
-[![docker.io/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.io/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.2019/images/sha256-1bed9f3e76e44f5b4d8fe110336bd99ba88a148b6142e71cd773f1d8d44c0ab4)
+[![docker.io/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.io/spheresoftnet/net.framework.sdk:4.8.T4.2019](https://hub.docker.com/layers/spheresoftnet/net.framework.sdk/4.8.T4.2019/images/sha256-1253b2b6895ac8a80c9cfb060cbfce5eb3c2226f666390bd7a44c16f552f1c10)
 
 
 

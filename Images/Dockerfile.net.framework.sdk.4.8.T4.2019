@@ -6,7 +6,7 @@ FROM $REPO:4.8-windowsservercore-ltsc2019
 
 MAINTAINER Holger Boskugel, github.com/SphereSoftNET
 
-LABEL org.opencontainers.image.description=".NET Framework 4.8 SDK (2019-LTSC) extension Text Templating (T4) and GIT"
+LABEL org.opencontainers.image.description=".NET Framework 4.8 SDK (2019-LTSC) extension Text Templating (T4)"
 LABEL org.opencontainers.image.authors="Holger Boskugel, github.com/SphereSoftNET"
 LABEL org.opencontainers.image.vendor="SphereSoft.NET"
 LABEL org.opencontainers.image.url="https://hub.docker.com/repository/docker/spheresoftnet/net.framework.sdk"
@@ -22,9 +22,11 @@ SHELL ["cmd", "/S", "/C"]
 
 
 # Install VS component Microsoft.VisualStudio.Component.TextTemplating
-RUN curl -fSLo vs_BuildTools.exe https://aka.ms/vs/17/release/vs_BuildTools.exe `
-    && start /w vs_BuildTools ^ `
-        --add Microsoft.VisualStudio.Component.TextTemplating ^ `
+RUN echo Resolving / Downloading ... `
+    && curl -fSLo vs_BuildTools.exe https://aka.ms/vs/17/release/vs_BuildTools.exe `
+    && echo Installing ... `
+    && start /w vs_BuildTools `
+        --add Microsoft.VisualStudio.Component.TextTemplating `
         --quiet --norestart --nocache --wait `
     && powershell -Command "if ($err = dir $Env:TEMP -Filter dd_setup_*_errors.log | where Length -gt 0 | Get-Content) { throw $err }" `
     && del vs_BuildTools.exe
