@@ -6,8 +6,16 @@ FROM $REPO:4.8.T4.2019
 
 MAINTAINER Holger Boskugel, github.com/SphereSoftNET
 
-LABEL maintainer="Holger Boskugel, github.com/SphereSoftNET"
-LABEL decsription=".NET Framework 4.8 (2019-LTSC) extension Text Templating (T4) and GIT"
+LABEL org.opencontainers.image.description=".NET Framework 4.8 SDK (2019-LTSC) extension Text Templating (T4) and GIT"
+LABEL org.opencontainers.image.authors="Holger Boskugel, github.com/SphereSoftNET"
+LABEL org.opencontainers.image.vendor="SphereSoft.NET"
+LABEL org.opencontainers.image.url="https://hub.docker.com/repository/docker/spheresoftnet/net.framework.sdk"
+LABEL org.opencontainers.image.source="https://github.com/SphereSoftNET/Docker/blob/master/Images/Dockerfile.net.framework.sdk.4.8.T4.GIT.2019"
+LABEL org.opencontainers.image.base.name="docker.io/spheresoftnet/net.framework.sdk:4.8.T4.2019"
+LABEL org.opencontainers.image.base.digest="7f8337a5876fabae94b9bcbf7558bc79b069889907f8af43cecbbfe32ec06493"
+LABEL org.opencontainers.image.licenses="MIT"
+LABEL org.opencontainers.image.version="2023.08.16"
+LABEL org.opencontainers.image.created="2023-08-16"
 
 
 SHELL ["cmd", "/S", "/C"]
