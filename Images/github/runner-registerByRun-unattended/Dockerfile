@@ -1,7 +1,7 @@
 # escape=`
 
 # <summary>
-# Docker image create GITHub Actions Runner with self register at run
+# Docker image create GITHub Actions Runner with self register at run (unattended)
 # </summary>
 # <param name="BASE_IMAGE">Base image</param>
 # <param name="BASE_DIGEST">Base digest (for documentation only)</param>
@@ -23,7 +23,7 @@ ARG GITHUB_RUNNER_VERSION=2.308.0
 ENV GITHUB_RUNNER_VERSION=${GITHUB_RUNNER_VERSION}
 
 
-LABEL org.opencontainers.image.description="GITHub Runner ${GITHUB_RUNNER_VERSION} self register by run"
+LABEL org.opencontainers.image.description="GITHub Runner ${GITHUB_RUNNER_VERSION} self register by run (unattended)"
 LABEL org.opencontainers.image.authors="Holger Boskugel, github.com/SphereSoftNET"
 LABEL org.opencontainers.image.vendor="SphereSoft.NET"
 LABEL org.opencontainers.image.url="https://hub.docker.com/repository/docker/spheresoftnet/github"
