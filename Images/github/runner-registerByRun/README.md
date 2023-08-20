@@ -10,8 +10,8 @@ will work in the application mode (looping batch).
 
 | Argument | Default | Description |
 | --- | --- | --- |
-| BASE_IMAGE | mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019 | Base image (FROM) |
-| BASE_DIGEST | sha256:a6e1586b48076f988a1c8a25b4c3cdecd585c4f99497127bb3432f7d72262704 | Base digest (for documentation only) |
+| BASE_IMAGE | docker.io/spheresoftnet/net.framework.sdk:4.8-T4-GIT-7Z-2019 | Base image (FROM) |
+| BASE_DIGEST | sha256:09409f04b5a83daea9ba1f0fb16c4ec6c588ebfc0f2bb4a3d5323291bd821b7f | Base digest (for documentation only) |
 | GITHUB_RUNNER_VERSION | 2.308.0 | GITHub Actions Runner Version |
 
 
