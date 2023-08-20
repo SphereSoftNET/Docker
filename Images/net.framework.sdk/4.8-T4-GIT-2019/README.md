@@ -9,7 +9,7 @@ This Docker image adds GIT to choosen base image
 | Argument | Default | Description |
 | --- | --- | --- |
 | BASE_IMAGE | docker.io/spheresoftnet/net.framework.sdk:4.8-T4-2019 | Base image (FROM) |
-| BASE_DIGEST | sha256:b1afef3c38cd1ff0d73a2af407d730c2a4b5a2f81d9c031f94e6fdca0acdd439 | Base digest (for documentation only) |
+| BASE_DIGEST | sha256:9ab5051b61e2a24252d045712021452d4e16059e2c8a77860f81248b948f2f09 | Base digest (for documentation only) |
 | GIT_VERSION | 2.41.0 | GIT Version |
 | GIT_REVISION | 3 | GIT Revision |
 

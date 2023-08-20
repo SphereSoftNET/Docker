@@ -56,7 +56,7 @@ RUN echo Sandcastle Help File Builder ... `
     && curl -fSLo SHFBInstaller.zip https://github.com/EWSoftware/SHFB/releases/download/%SHFB_VERSION%/SHFBInstaller_%SHFB_VERSION%.zip `
     && echo Installing ... `
     && start /w "C:\Program Files\7-Zip\7z" e SHFBInstaller.zip InstallResources/SandcastleHelpFileBuilder.msi `
-    && start /w msiexec /i SandcastleHelpFileBuilder.msi /quiet /norestart `
+    && start /w msiexec /a SandcastleHelpFileBuilder.msi /quiet /norestart `
     && powershell -Command "if ($err = dir $Env:TEMP -Filter dd_setup_*_errors.log | where Length -gt 0 | Get-Content) { throw $err }" `
     && del SandcastleHelpFileBuilder.msi `
     && del SHFBInstaller.zip

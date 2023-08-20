@@ -9,7 +9,7 @@ This Docker image adds 7Zip to choosen base image
 | Argument | Default | Description |
 | --- | --- | --- |
 | BASE_IMAGE | docker.io/spheresoftnet/net.framework.sdk:4.8-T4-GIT-2019 | Base image (FROM) |
-| BASE_DIGEST | sha256:25b9ec89f5776710ba2dbedd4ab2ec77f6d28b69459c77d14d2859bdc099edc5 | Base digest (for documentation only) |
+| BASE_DIGEST | sha256:54aa571c68e0db42de418b7e4bd86fc92681dbfb40a3f0109be9da19e4ec179d | Base digest (for documentation only) |
 | SEVEN_ZIP_VERSION | 2301 | 7Zip Version |
 
 

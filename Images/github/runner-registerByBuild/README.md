@@ -11,7 +11,7 @@ will work in the application mode (looping batch).
 | Argument | Required<br/>Optional | Default | Description |
 | --- | --- | --- | --- |
 | BASE_IMAGE | docker.io/spheresoftnet/net.framework.sdk:4.8-T4-GIT-7Z-2019 | Base image (FROM) |
-| BASE_DIGEST | sha256:09409f04b5a83daea9ba1f0fb16c4ec6c588ebfc0f2bb4a3d5323291bd821b7f | Base digest (for documentation only) |
+| BASE_DIGEST | sha256:91a09c13f027fe27f1eef5df2348ed6c996a0823ab5008daa76c5abde85ea32a | Base digest (for documentation only) |
 | GITHUB_RUNNER_VERSION | Optional| 2.308.0 | GITHub Actions Runner Version |
 | **GITHUB_RUNNER_URL** | Required | | Runner URL (see when create new runner, argument "--url") |
 | **GITHUB_RUNNER_TOKEN** | Required | | Runner Token (see when create new runner, argument "--token") |
