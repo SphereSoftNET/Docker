@@ -5,7 +5,7 @@
 # </summary>
 # <param name="BASE_IMAGE">Base image</param>
 # <param name="BASE_DIGEST">Base digest (for documentation only)</param>
-# <param name="7ZIP_VERSION">7Zip Version</param>
+# <param name="SEVEN_ZIP_VERSION">7Zip Version</param>
 # <revisionHistory>
 #   <revision version="2023.08.20" date="2023-08-20" author="Holger Boskugel, github.com/SphereSoftNET">Initial implementation</revision>
 # </revisionHistory>
