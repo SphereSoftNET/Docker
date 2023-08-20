@@ -1,11 +1,11 @@
-# Docker image creates GITHub Actions Runner with self register at run
+# Docker image creates GITHub Actions Runner with self register at run (unattended)
 
 - [Build arguments](#build-arguments)
 - [Environment variables added](#environment-variables-added)
 - [Environment variables for run](#environment-variables-for-run)
 - [Docker Images](#docker-images)
 
-This image creates a GITHub Actions Runner with registering at run.
+This image creates a GITHub Actions Runner with registering at run (unattended).
 Register informations must be given by environment variables. The runner
 will work in the application mode (looping batch).
 
@@ -40,8 +40,8 @@ will work in the application mode (looping batch).
 
 ## [Docker Images](#)
 
-[![docker.com/spheresoftnet/github:runner-registerByRun](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.com/spheresoftnet/github:runner-registerByRun](https://hub.docker.com/layers/spheresoftnet/github/runner-registerByRun/images/sha256-ef84ef539f81af893721044dbc294300f577ce85e52843a4452f39412fd10cea)  
-[<img src="https://github.com/fluidicon.png" alt="ghcr.io/spheresoftnet/github:runner-registerByRun" height="32"/> spheresoftnet/github:runner-registerByRun](https://github.com/SphereSoftNET/Docker/pkgs/container/net.framework.sdk/119116954?tag=4.8.T4.GIT.2019)
+[![docker.com/spheresoftnet/github:runner-registerByRun-unattended](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.com/spheresoftnet/github:runner-registerByRun-unattended](https://hub.docker.com/layers/spheresoftnet/github/runner-registerByRun/images/sha256-29b1e1e6fe1e64d23f58bf8d4fdfbb67570f37ad2fa2eb989a870b74f25b79dd)  
+[<img src="https://github.com/fluidicon.png" alt="ghcr.io/spheresoftnet/github:runner-registerByRun-unattended" height="32"/> spheresoftnet/github:runner-registerByRun-unattended](https://github.com/SphereSoftNET/Docker/pkgs/container/github/119116954?tag=runner-registerByRun-unattended)
 
 
 
