@@ -1,7 +1,7 @@
 # Docker image creates GITHub Actions Runner with self register at run
 
 This image creates a GITHub Actions Runner with registering at run.
-Register informations can be given by environment variables. The runner
+Register informations must be given by environment variables. The runner
 will work in the application mode (looping batch).
 
 
