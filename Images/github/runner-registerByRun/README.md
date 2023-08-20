@@ -37,7 +37,7 @@ will work in the application mode (looping batch).
 | **GITHUB_RUNNER_TOKEN** | Required | Runner Token (see when create new runner, argument "--token") |
 | GITHUB_RUNNER_GROUP | Optional | Runner Group (default is empty) |
 | GITHUB_RUNNER_NAME | Optional | Runner Name (default is COMPUTERNAME or generated name) |
-| GITHUB_RUNNER_LABELS | Optional | Runner Additonal Labels (for your own; alredy existings are "windows" and "x64") |
+| GITHUB_RUNNER_LABELS | Optional | Runner Additonal Labels (for your own; alredy existings are "self-hosted", "Windows" and "x64") |
 | GITHUB_RUNNER_WORKFOLDER | Optional | Runner Work Folder (default is "_Work") |
 
 
@@ -45,6 +45,7 @@ will work in the application mode (looping batch).
 ## [Docker Images](#)
 
 [![docker.com/spheresoftnet/github:runner-registerByRun](https://www.docker.com/wp-content/uploads/2023/04/cropped-Docker-favicon-32x32.png) docker.com/spheresoftnet/github:runner-registerByRun](https://hub.docker.com/layers/spheresoftnet/github/runner-registerByRun/images/sha256-ef84ef539f81af893721044dbc294300f577ce85e52843a4452f39412fd10cea)  
+[<img src="https://github.com/fluidicon.png" alt="ghcr.io/spheresoftnet/github:runner-registerByRun" height="32"/> spheresoftnet/github:runner-registerByRun](https://github.com/SphereSoftNET/Docker/pkgs/container/net.framework.sdk/119116954?tag=4.8.T4.GIT.2019)
 
 
 
