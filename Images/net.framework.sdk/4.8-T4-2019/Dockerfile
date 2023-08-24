@@ -31,8 +31,8 @@ LABEL org.opencontainers.image.source="https://github.com/SphereSoftNET/Docker/b
 LABEL org.opencontainers.image.base.name="${BASE_IMAGE}"
 LABEL org.opencontainers.image.base.digest="${BASE_DIGEST}"
 LABEL org.opencontainers.image.licenses="MIT"
-LABEL org.opencontainers.image.version="2023.08.20"
-LABEL org.opencontainers.image.created="2023-08-20"
+LABEL org.opencontainers.image.version="2023.08.24"
+LABEL org.opencontainers.image.created="2023-08-24"
 
 
 SHELL ["cmd", "/S", "/C"]

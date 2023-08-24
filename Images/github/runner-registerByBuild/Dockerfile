@@ -13,6 +13,7 @@
 # <param name="GITHUB_RUNNER_LABELS">Optional GITHub Actions Runner Labels; own labels, already existings are "windows" and "x64"</param>
 # <param name="GITHUB_RUNNER_WORKFOLDER">Optional GITHub Actions Runner Work Folder; default "_work"</param>
 # <revisionHistory>
+#   <revision version="2023.08.24" date="2023-08-24" author="Holger Boskugel, github.com/SphereSoftNET">Added "--replace --disableupdate" at registration and environment variables as registration report</revision>
 #   <revision version="2023.08.20" date="2023-08-20" author="Holger Boskugel, github.com/SphereSoftNET">Initial implementation</revision>
 # </revisionHistory>
 
@@ -23,7 +24,7 @@ FROM ${BASE_IMAGE}
 
 
 ARG BASE_IMAGE=docker.io/spheresoftnet/net.framework.sdk:4.8-T4-GIT-7Z-2019
-ARG BASE_DIGEST=sha256:91a09c13f027fe27f1eef5df2348ed6c996a0823ab5008daa76c5abde85ea32a
+ARG BASE_DIGEST=sha256:062fe6216c748abe76e4deefec770231fc4cb3dfe39ded20e6d71acada43413d
 ARG GITHUB_RUNNER_VERSION=2.308.0
 ARG GITHUB_RUNNER_URL
 ARG GITHUB_RUNNER_TOKEN
@@ -35,6 +36,10 @@ ARG GITHUB_RUNNER_WORKFOLDER
 
 ENV GITHUB_RUNNER_VERSION=${GITHUB_RUNNER_VERSION}
 ENV GITHUB_RUNNER_URL=${GITHUB_RUNNER_URL}
+ENV GITHUB_RUNNER_GROUP=${GITHUB_RUNNER_GROUP}
+ENV GITHUB_RUNNER_NAME=${GITHUB_RUNNER_NAME}
+ENV GITHUB_RUNNER_LABELS=${GITHUB_RUNNER_LABELS}
+ENV GITHUB_RUNNER_WORKFOLDER=${GITHUB_RUNNER_WORKFOLDER}
 
 
 LABEL org.opencontainers.image.description="GITHub Runner ${GITHUB_RUNNER_VERSION} self registered by build"
@@ -45,8 +50,8 @@ LABEL org.opencontainers.image.source="https://github.com/SphereSoftNET/Docker/b
 LABEL org.opencontainers.image.base.name="docker.io/spheresoftnet/net.framework.sdk:4.8-T4-GIT-7Z-2019"
 LABEL org.opencontainers.image.base.digest="a2f4f898d5f39480a2d18ee12ccfe146470838267a1838bdc08e2a6a94eb3c30"
 LABEL org.opencontainers.image.licenses="MIT"
-LABEL org.opencontainers.image.version="2023.08.18"
-LABEL org.opencontainers.image.created="2023-08-18"
+LABEL org.opencontainers.image.version="2023.08.24"
+LABEL org.opencontainers.image.created="2023-08-24"
 
 
 SHELL ["cmd", "/S", "/C"]
@@ -62,7 +67,7 @@ RUN echo Proof arguments ... `
 RUN echo Resolving / Downloading ... `
     && curl -fSLo actions-runner-win-x64.zip https://github.com/actions/runner/releases/download/v%GITHUB_RUNNER_VERSION%/actions-runner-win-x64-%GITHUB_RUNNER_VERSION%.zip `
     && echo Installing ... `
-    && "Program Files\7-Zip\7z" x actions-runner-win-x64.zip -o"Program Files\GITHub\actions-runner" `
+    && "Program Files\7-Zip\7z" x actions-runner-win-x64.zip -o"%ProgramFiles%\GITHub\actions-runner" `
     && powershell -Command "if ($err = dir $Env:TEMP -Filter dd_setup_*_errors.log | where Length -gt 0 | Get-Content) { throw $err }" `
     && del actions-runner-win-x64.zip
 
@@ -73,12 +78,12 @@ RUN echo Registering ... `
     && (if defined GITHUB_RUNNER_NAME (echo %GITHUB_RUNNER_NAME% >> "Program Files\GITHub\actions-runner\config.dat") else (echo. >> "Program Files\GITHub\actions-runner\config.dat")) `
     && (if defined GITHUB_RUNNER_LABELS (echo %GITHUB_RUNNER_LABELS% >> "Program Files\GITHub\actions-runner\config.dat") else (echo. >> "Program Files\GITHub\actions-runner\config.dat")) `
     && (if defined GITHUB_RUNNER_WORKFOLDER (echo %GITHUB_RUNNER_WORKFOLDER% >> "Program Files\GITHub\actions-runner\config.dat") else (echo. >> "Program Files\GITHub\actions-runner\config.dat")) `
-    && echo. >> "Program Files\GITHub\actions-runner\config.dat" `
-    && "Program Files\\GITHub\\actions-runner\\config.cmd" --url "%GITHUB_RUNNER_URL%" --token "%GITHUB_RUNNER_TOKEN%" < "Program Files\\GITHub\\actions-runner\\config.dat" `
+    && echo N >> "Program Files\GITHub\actions-runner\config.dat" `
+    && "%ProgramFiles%\\GITHub\\actions-runner\\config.cmd" --url "%GITHUB_RUNNER_URL%" --token "%GITHUB_RUNNER_TOKEN%" --replace --disableupdate < "%ProgramFiles%\\GITHub\\actions-runner\\config.dat" `
     && echo. `
     && echo. `
-    && echo Finishing register ... `
+    && echo Finishing registration (please wait) ... `
     && powershell -Command "if ($err = dir $Env:TEMP -Filter dd_setup_*_errors.log | where Length -gt 0 | Get-Content) { throw $err }"
 
 
-ENTRYPOINT ["Program Files\\GITHub\\actions-runner\\run.cmd"]
+ENTRYPOINT ["C:\\Program Files\\GITHub\\actions-runner\\run.cmd"]

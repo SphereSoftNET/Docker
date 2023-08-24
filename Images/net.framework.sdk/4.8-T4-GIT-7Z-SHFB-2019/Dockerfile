@@ -16,7 +16,7 @@ ARG BASE_IMAGE=docker.io/spheresoftnet/net.framework.sdk:4.8-T4-GIT-7Z-2019
 FROM ${BASE_IMAGE}
 
 ARG BASE_IMAGE=docker.io/spheresoftnet/net.framework.sdk:4.8-T4-GIT-7Z-2019
-ARG BASE_DIGEST=sha256:09409f04b5a83daea9ba1f0fb16c4ec6c588ebfc0f2bb4a3d5323291bd821b7f
+ARG BASE_DIGEST=sha256:062fe6216c748abe76e4deefec770231fc4cb3dfe39ded20e6d71acada43413d
 ARG SHFB_VERSION=2023.7.8.0
 
 
@@ -31,8 +31,8 @@ LABEL org.opencontainers.image.source="https://github.com/SphereSoftNET/Docker/b
 LABEL org.opencontainers.image.base.name="${BASE_IMAGE}"
 LABEL org.opencontainers.image.base.digest="${BASE_DIGEST}"
 LABEL org.opencontainers.image.licenses="MIT"
-LABEL org.opencontainers.image.version="2023.08.20"
-LABEL org.opencontainers.image.created="2023-08-20"
+LABEL org.opencontainers.image.version="2023.08.24"
+LABEL org.opencontainers.image.created="2023-08-24"
 
 
 SHELL ["cmd", "/S", "/C"]
